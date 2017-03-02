@@ -28,7 +28,7 @@ function titleFromThumb(thumbnail) {
 
 function setDetailsFromThumb(thumbnail) {
     'use-strict';
-    alert(thumbnail);
+    
     setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
 
