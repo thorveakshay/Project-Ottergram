@@ -28,7 +28,7 @@ function titleFromThumb(thumbnail) {
 
 function setDetailsFromThumb(thumbnail) {
     'use-strict';
-    
+
     setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
 
@@ -76,11 +76,11 @@ function addKeyPressHandler() {
     'use strict';
     document.body.addEventListener('keyup', function(event) {
         event.preventDefault();
-        //console.log(event.keyCode);
+        console.log(event.keyCode);
 
         if (event.keyCode === ESC_KEY) {
             hideDetails();
-        } else if (event.keyCode >= 49 || event.keyCode <= 53) {
+        } else if (event.keyCode >= 49 && event.keyCode <= 58) {
             // Code added for 1 to 5 key press function
             var key = event.keyCode - 49;
             var thumbs = getThumbnailsArray();
